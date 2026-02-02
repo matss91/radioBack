@@ -1,12 +1,14 @@
 require("dotenv").config();
 const express = require("express");
-const cors = require("cors");
+
+
+
+const cors = require('cors');
 
 const app = express();
-express.json();
+
 app.use(cors());
-app.use(express.json()); // for JSON bodies
-app.use(express.urlencoded({ extended: true })); // for form data
+app.use(express.json());
 const { router } = require("./routes/Register");
 const { routerDelete } = require("./routes/resetPassword");
 app.use("/api/products", require("./routes/Programs"));
