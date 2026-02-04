@@ -5,7 +5,7 @@ const transporter = require("../option/server");
 const Usuario = require("../models/Users");
 
 const router = express.Router();
-
+require('dotenv').config();
 router.post("/", async (req, res) => {
   const { email } = req.body;
 
@@ -24,8 +24,8 @@ router.post("/", async (req, res) => {
     const resetLink = `http://localhost:4000/api/reset-password/${token}`;
 
     await transporter.sendMail({
-      from: "Soporte <matcardillo91@gmail.com>",
-      to: "matcardillo91@gmail.com",
+      from:process.env.EMAIL_USER,
+      to:process.env.REGISTRO_EMAIL,
       subject: "Recuperar contraseña",
       html: `
         <p>Hola ${user.name}</p>
