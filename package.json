@@ -1,17 +1,25 @@
 {
   "name": "radioback",
   "version": "1.0.0",
+  "description": "",
+  "keywords": [],
+  "homepage": "https://github.com/matss91/radioBack#readme",
+  "bugs": {
+    "url": "https://github.com/matss91/radioBack/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matss91/radioBack.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js",
     "dev": "nodemon index.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
-  "description": "",
   "dependencies": {
     "bcrypt": "^6.0.0",
     "bcryptjs": "^3.0.3",
