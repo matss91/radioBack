@@ -1,7 +1,7 @@
 const { Schema, model } = require("mongoose");
 
 const PhotoSchema = new Schema({
-  fecha:Number,
+  fecha:String,
   linkPhoto: String,
   
   

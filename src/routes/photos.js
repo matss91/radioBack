@@ -23,8 +23,8 @@ router.put("/:id",auth, async (req, res) => {
 
 // ❌ Admin - eliminar
 router.delete("/:id",auth, async (req, res) => {
-  await photos.findByIdAndDelete(req.params.id);
-  res.json({ msg: "Producto eliminado" });
-});
+  await Photos.findByIdAndDelete(req.params.id);
+  res.json({ msg: "Producto eliminado" })}
+)
 
 module.exports = router;
